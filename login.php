@@ -13,11 +13,11 @@
       <i class="fa fa-lock fa-stack-1x"></i>
     </span>
   </p>
-  <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
-  <input type="password" class="login-password" required="true" placeholder="Password" />
-  <input type="submit" name="Login" value="Login" class="login-submit" />
+  <input type="text" class="login-username" autofocus="true" required="true" placeholder="Usuario" />
+  <input type="password" class="login-password" required="true" placeholder="Contraseña" />
+  <input type="submit" name="Login" value="Ingresar" class="login-submit" />
 </form>
-<a href="#" class="login-forgot-pass">forgot password?</a>
+<a href="registro.php" class="login-forgot-pass">¿No tienes cuenta? Create Una</a>
 <div class="underlay-photo"></div>
 <div class="underlay-black"></div> 
 <body>

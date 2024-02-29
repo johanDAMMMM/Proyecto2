@@ -1,41 +1,29 @@
-<?php
-$usuario = $_POST["usuario"];
-$contraseña = $_POST["contraseña"];
-session_start();
-$_SESSION["usuario"]=$usuario;
-
-$conexion=mysqli_connect("localhost", "root", "", "usuario");
-
-$consulta="SELECT * FROM usuario where usuario='$usuario' and contraseña='$contraseña'";
-$resultado=mysqli_query($conexion,$consulta);
-
-$filas = mysqli_num_rows($resultado);
-
-if($filas){
-    header("location:home.php");
-}
-else{
-    ?>
-    <?php
-    include("index.php");
-    ?>
-    <h1 class="bad">ERROR EM LA AUTENTICACIÓN</h1>
-    <?php
-}
-mysqli_free_result($resultado);
-mysqli_close($conexion);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index_style.css">
     <title>index</title>
 </head>
-<header>
-    
-</header>
 <body>
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <a href="#" class="logo">Logo</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="imagenes/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Inicio Sesión</a></li>
+                        <li><a href="#">Perfil</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
