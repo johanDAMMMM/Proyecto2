@@ -6,11 +6,16 @@
     list-style: none;
 }
 
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
-    background: linear-gradient(
-        90 deg,
-        rgba(166,93, 234,1) 25%, 
-        rgba(207,103,235,1)73%);
+    background: lavender;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +25,7 @@ body {
 }
 
 .back {
-    padding: 32 px 0;
+    padding: 32px 0;
     background-color: #2A394F;
 }
 
@@ -72,7 +77,7 @@ body {
 }
 
 @media(max-width:991px) {
-
+    
     .menu {
         padding: 30px;
     }
