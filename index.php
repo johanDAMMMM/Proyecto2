@@ -18,7 +18,7 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Inicio Sesión</a></li>
+                        <li><a href="login.php">Inicio Sesión</a></li>
                         <li><a href="#">Perfil</a></li>
                     </ul>
                 </nav>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href=assets/css/login_style.css>
 </head>
-<form class="login-form">
+<form class="login-form" method="POST">
   <p class="login-text">
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
