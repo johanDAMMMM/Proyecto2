@@ -20,16 +20,13 @@
   <input type="text" class="login-lastname" name="apellido" required="true" placeholder="Apellido" />
   <input type="text" class="login-username" name="usuario" required="true" placeholder="Usuario" />
   <input type="email" class="login-email" name="correo" autofocus="true" required="true" placeholder="Correo" />
-  <input type="password" class="login-password" name="contraseña" required="true" placeholder="Contraseña" />
+  <input type="password" class="login-password" name="contraseña" required="true" placeholder="Contraseña" minlength="5" maxlength="15"/>
   <button type="submit" name="submit" value="Registrar" class="login-submit"> Registrar</button>
 </form>
 <div class="underlay-photo"></div>
 <div class="underlay-black"></div>
 <?php
   include("registrar.php");
-  if($conexion) {
-    echo "Hola";
-  }
 ?>
 
 </body>

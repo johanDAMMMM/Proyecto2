@@ -7,21 +7,23 @@
     <title>Login</title>
     <link rel="stylesheet" href=assets/css/login_style.css>
 </head>
-<form class="login-form" method="POST">
+<form class="login-form" action="validar.php" method="post">
   <p class="login-text">
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
       <i class="fa fa-lock fa-stack-1x"></i>
     </span>
   </p>
-  <input type="text" class="login-username" autofocus="true" required="true" placeholder="Usuario" />
-  <input type="password" class="login-password" required="true" placeholder="Contraseña" />
+  <input type="text" class="login-username" autofocus="true" name="usuario" required="true" placeholder="Usuario" />
+  <input type="password" class="login-password" required="true" name="contraseña" placeholder="Contraseña" minlength="5" maxlength="15" />
   <input type="submit" name="Login" value="Ingresar" class="login-submit" />
 </form>
 <a href="registro.php" class="login-forgot-pass">¿No tienes cuenta? Create Una</a>
 <div class="underlay-photo"></div>
 <div class="underlay-black"></div> 
 <body>
+
+
     
 </body>
 </html>
